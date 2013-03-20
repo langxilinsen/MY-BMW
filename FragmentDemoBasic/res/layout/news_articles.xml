@@ -2,20 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="这个是在FrameLayout中的" />
+    android:orientation="horizontal" >
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:background="#ee3333" >
     </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/fragment_container_article"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ee3333" >
+    </FrameLayout>
 
 </LinearLayout>

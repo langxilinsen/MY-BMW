@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#1f1" >
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="第二页"
+        android:text="第 1 页"
         android:textAppearance="?android:attr/textAppearanceLarge" >
     </TextView>
 
@@ -20,5 +21,12 @@
         <requestFocus>
         </requestFocus>
     </EditText>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ee3" >
+    </FrameLayout>
 
 </LinearLayout>

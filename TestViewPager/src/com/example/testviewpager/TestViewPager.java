@@ -6,6 +6,9 @@ import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
@@ -14,7 +17,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 
-public class TestViewPager extends Activity {
+public class TestViewPager extends FragmentActivity {
 	private ViewPager myViewPager;
 
 	private MyPagerAdapter myAdapter; // 自定义的PagerAdapter子类
@@ -24,6 +27,10 @@ public class TestViewPager extends Activity {
 	private View layout1;
 	private View layout2;
 	private View layout3;
+	
+	private FragmentArticle myFragment;
+	private FragmentManager myManager;
+	private FragmentTransaction myTransaction;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +52,11 @@ public class TestViewPager extends Activity {
 		mListView.add(layout3);
 
 		// 初始化当前显示的view
-		myViewPager.setCurrentItem(1);
+		myViewPager.setCurrentItem(0);
+		
+		
+		
 
-		// 初始化第二个view的信息
-		EditText v2EditText = (EditText) layout2.findViewById(R.id.editText1);
-		v2EditText.setText("动态设置第二个view的值");
 
 		myViewPager.setOnPageChangeListener(new OnPageChangeListener() {
 
@@ -72,6 +79,11 @@ public class TestViewPager extends Activity {
 				View v = mListView.get(arg0);
 				EditText editText = (EditText) v.findViewById(R.id.editText1);
 				editText.setText("动态设置#" + arg0 + "editText控件的值");
+				myFragment = new FragmentArticle();
+				myManager = TestViewPager.this.getSupportFragmentManager();
+				myTransaction = myManager.beginTransaction();
+				myTransaction.add(R.id.fragment_container , myFragment).commit();
+				//为什么这段放在onCreate中不行呢？
 			}
 
 		});
@@ -98,14 +110,14 @@ public class TestViewPager extends Activity {
 		// abstract
 		public boolean isViewFromObject(View arg0, Object arg1) {
 			// TODO Auto-generated method stub
-			Log.d("k", "isViewFromObject");
+//			Log.d("k", "isViewFromObject");
 			return arg0 == arg1;
 		}
 
 		@Override
 		// abstract
 		public int getCount() {
-			Log.d("k", "getCount");
+//			Log.d("k", "getCount"+mListView.size());
 			return mListView.size();
 
 		}

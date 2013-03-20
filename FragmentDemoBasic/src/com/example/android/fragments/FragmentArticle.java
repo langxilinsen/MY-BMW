@@ -22,7 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class ArticleFragment extends Fragment {
+public class FragmentArticle extends Fragment {
     final static String ARG_POSITION = "position";
     int mCurrentPosition = -1;
 

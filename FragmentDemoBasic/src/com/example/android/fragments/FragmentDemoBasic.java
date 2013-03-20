@@ -25,7 +25,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class FragmentDemoBasic extends FragmentActivity 
-        implements HeadlinesFragment.OnHeadlineSelectedListener {
+        implements FragmentHeadlines.OnHeadlineSelectedListener {
+	
 	private Button btn1;
     /** Called when the activity is first created. */
     @Override
@@ -34,7 +35,7 @@ public class FragmentDemoBasic extends FragmentActivity
         setContentView(R.layout.news_articles);
 
         // Check whether the activity is using the layout version with
-        // the fragment_container FrameLayout. If so, we must add the first fragment
+        // the fragment_container FrameLayout. If so, we must add the first fragment,一个FrameLayout当的Container
         if (findViewById(R.id.fragment_container) != null) {
 
             // However, if we're being restored from a previous state,
@@ -45,34 +46,24 @@ public class FragmentDemoBasic extends FragmentActivity
             }
 
             // Create an instance of ExampleFragment
-            HeadlinesFragment firstFragment = new HeadlinesFragment();
+            FragmentHeadlines firstFragment = new FragmentHeadlines();
   //          ArticleFragment firstFragment = new ArticleFragment();
             // In case this activity was started with special instructions from an Intent,
             // pass the Intent's extras to the fragment as arguments
             firstFragment.setArguments(getIntent().getExtras());
 
-            // Add the fragment to the 'fragment_container' FrameLayout
+            // Add the fragment to the 'fragment_container' FrameLayout***这句代码要记住
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_container, firstFragment).commit();
             
         }
-        btn1 = (Button)findViewById(R.id.button1);
-        btn1.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent it = new Intent(FragmentDemoBasic.this,SingleActivity.class);
-				startActivity(it);
-				
-			}
-		});
     }
 
     public void onArticleSelected(int position) {
         // The user selected the headline of an article from the HeadlinesFragment
 
         // Capture the article fragment from the activity layout
-        ArticleFragment articleFrag = (ArticleFragment)
+        FragmentArticle articleFrag = (FragmentArticle)
                 getSupportFragmentManager().findFragmentById(R.id.article_fragment);
 
         if (articleFrag != null) {
@@ -85,15 +76,15 @@ public class FragmentDemoBasic extends FragmentActivity
             // If the frag is not available, we're in the one-pane layout and must swap frags...
 
             // Create fragment and give it an argument for the selected article
-            ArticleFragment newFragment = new ArticleFragment();
+            FragmentArticle newFragment = new FragmentArticle();
             Bundle args = new Bundle();
-            args.putInt(ArticleFragment.ARG_POSITION, position);
+            args.putInt(FragmentArticle.ARG_POSITION, position);
             newFragment.setArguments(args);
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
             // Replace whatever is in the fragment_container view with this fragment,
             // and add the transaction to the back stack so the user can navigate back
-            transaction.replace(R.id.fragment_container, newFragment);
+            transaction.replace(R.id.fragment_container_article, newFragment);
             transaction.addToBackStack(null);
 
             // Commit the transaction
