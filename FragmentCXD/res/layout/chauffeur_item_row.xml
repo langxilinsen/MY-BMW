@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<include  
+        android:id="@+id/chauffeur_header"  
+        layout="@layout/emergency_header" /> 
+    <include  
+        android:id="@+id/chauffeur_midel"  
+        layout="@layout/chauffeur_body" /> 
+        <include  
+        android:id="@+id/chauffeur_footer"  
+        layout="@layout/emergency_footer" /> 
+
+</LinearLayout>

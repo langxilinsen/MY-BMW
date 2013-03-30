@@ -12,27 +12,32 @@ public class MyFragmentMain extends FragmentActivity
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.news);
+		
 
 //		if (findViewById(R.id.fragment_container) != null) {
 //			if (savedInstanceState != null) {
 //				return;
 //			}
-//			HeadlinesFragment firstFragment = new HeadlinesFragment();
-//			// ArticleFragment firstFragment = new ArticleFragment();
+			HeadlinesFragment firstFragment = new HeadlinesFragment();
+			// ArticleFragment firstFragment = new ArticleFragment();
 //			firstFragment.setArguments(getIntent().getExtras());
-//
+
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.fragment_container, firstFragment).commit();
+			setContentView(R.layout.news);
+//			ArticleFragment secondFragment = new ArticleFragment();
+//			
 //			getSupportFragmentManager().beginTransaction()
-//					.add(R.id.fragment_container, firstFragment).commit();
-//
-//		}
+//			.add(R.id.fragment_container, secondFragment).commit();
+
+		}
 
 //		// Create fragment and give it an argument specifying the article it
 //		// should show
-//		ArticleFragment newFragment = new ArticleFragment();
+//		ArticleFragment secondFragment = new ArticleFragment();
 //		Bundle args = new Bundle();
 //		args.putInt(ArticleFragment.ARG_POSITION, 1);
-//		newFragment.setArguments(args);
+//		secondFragment.setArguments(args);
 //
 //		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 //
@@ -40,12 +45,12 @@ public class MyFragmentMain extends FragmentActivity
 //		// fragment,
 //		// and add the transaction to the back stack so the user can navigate
 //		// back
-//		transaction.replace(R.id.fragment_container, newFragment);
+//		transaction.replace(R.id.fragment_container, secondFragment);
 //		transaction.addToBackStack(null);
 //
 //		// Commit the transaction
 //		transaction.commit();
-	}
+//	}
 
 	@Override
 	public void onArticleSelected(int position) {

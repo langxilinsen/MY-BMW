@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/inputtable"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/table_style" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp" >
+
+            <!-- 用户名输入 -->
+
+            <TextView
+                android:text="  用户名"
+                android:textColor="#111111"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/reg_name_edit"
+                android:layout_width="180dp"
+                android:hint="手机号码"
+                android:inputType="number"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#cccccc" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" >
+
+            <!-- 密码1输入 -->
+
+            <TextView
+                android:text="  密码"
+                android:textColor="#111111"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/reg_pass1_edit"
+                android:hint="6~32位字母或数字"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#cccccc" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" >
+
+            <!-- 密码2输入 -->
+
+            <TextView
+                android:text="  确认密码"
+                android:textColor="#111111"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/reg_pass2_edit"
+                android:hint="6~32位字母或数字"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="手机号码仅做身份验证" />
+
+    <Button
+        android:id="@+id/reg_reg_button"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style_orange"
+        android:text="确定" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/reg_gologin_button"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style_gray"
+        android:text="已有帐号，点此登陆" />
+
+</LinearLayout>

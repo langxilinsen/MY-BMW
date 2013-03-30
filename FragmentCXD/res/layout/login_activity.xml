@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_linear"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login_2x"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_login_2x" >
+    </ImageView>
+
+    <TableLayout
+        android:id="@+id/inputtable"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/table_style" >
+
+        <!-- ***用户名之行*** -->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:text="  用户名"
+                android:textColor="#111111"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/login_username_edit"
+                android:layout_width="180dp"
+                android:background="@null"
+                android:hint="电话号码"
+                android:inputType="number"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#cccccc" />
+        <!-- ***密码之行*** -->
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:text="  密码"
+                android:textColor="#111111"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/login_password_edit"
+                android:background="@null"
+                android:hint="6~32位字母或数字"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/login_login_button"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_style_gray"
+        android:text="用户登陆"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/login_goreg_button"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style_orange"
+        android:text="新用户注册"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="忘记密码？"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/weixin"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style_gray"
+        android:text="微信测试"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

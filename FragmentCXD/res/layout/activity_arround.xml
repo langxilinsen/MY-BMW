@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/bgolor"
+    tools:context=".ArroundActivity"
+    android:orientation="vertical"
+     >
+      <RadioGroup
+        android:id="@+id/around_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="210dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/around_radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="默认排序" />
+
+        <RadioButton
+            android:id="@+id/around_radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="距离最近" />
+
+        <RadioButton
+            android:id="@+id/around_radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="口碑最好" />
+        <RadioButton
+            android:id="@+id/around_radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搜索" />
+    </RadioGroup>
+
+      <ListView
+        android:id="@+id/listView_around"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </ListView>
+
+</LinearLayout>

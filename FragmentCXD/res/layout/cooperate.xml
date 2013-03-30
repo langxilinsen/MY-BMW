@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bgolor"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical">
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_bizboopration_2x"></ImageView>
+
+
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="感谢您对车小弟的关注，如果您有任何成型的合作建议，请及时联系我们。"/>
+	
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:text="商务合作邮箱：(点击发邮件)"/>
+		<TextView
+		    android:id="@+id/coop_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:text="BIZ@CheXiaoDi.cn"/>
+		
+		
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:text="车小弟对外合作电话：(点击直接播打)"/>
+		<TextView
+		    android:id="@+id/coop_call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingLeft="20dp"
+            android:text="153-9718-1789"/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="15dp"
+            android:text="
+			（本电话仅对企业类商务合作，谢绝个人身份洽谈合作）"/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="合作范围："/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="汽车用品电子商务网站合作                                                                             
+			车小弟愿意与各垂直领域（汽车用品，配件等领域）的电子商务网站合作，共同为车小弟用户提供优质商品和服务。 "/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="汽车后市场商家，汽车修理厂合作                                                                                                                          
+			车小弟愿意与汽车后市场商家、汽车修理厂、汽车用品、汽车零配件生产，零售商合作，借助车小弟平台，帮助合作伙伴实现汽车后市场行业OtoO。"/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="营销合作                                                                                                                          
+			车小弟在营销上有着自己强大的平台传播优势以及精准性的营销模式，诚邀任何形式线上线下的营销合作，通过发挥车小弟及合作伙伴的自身优势，互惠互利。"/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="媒体合作                                                                                                                          
+			车小弟欢迎各类媒体、出版社等与我们联系，希望在各类传播方面能建立长期合作。 "/>
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+            android:text="品牌商合作                                                                                                                          
+			诚邀各类品牌商入驻车小弟，在汽车后市场领域拓展市场份额。"/>
+		
+    </LinearLayout>
+
+</ScrollView>

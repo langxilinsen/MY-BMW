@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style
+        name="myRatingBarStyle"
+        parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_style</item>
+  	    <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">100dip</item>		
+    </style>
+    
+</resources>

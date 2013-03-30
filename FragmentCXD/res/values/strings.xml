@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SlidingMenuDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="welcome">Welcome,你可以打开Sliding Menu来切换菜单</string>
+
+    <string name="app_name">车小弟</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="picture_top_left_text">图片</string>
+    <string name="github">GitHub</string>
+    <string name="github_label">SlidingMenu on GitHub</string>
+    <string name="viewpager">车小弟</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exclussive_button">配件与维修</string>
+    <string name="fundermaintal_button">保养与护理</string>
+    <string name="title_activity_exclusive_accessories">ExclusiveAccessoriesActivity</string>
+    <string name="title_activity_insurence">InsurenceActivity</string>
+    <string name="title_activity_promotion_web">PromotionWebActivity</string>
+    <string name="title_activity_chauffeur">ChauffeurActivity</string>
+    <string name="title_activity_che_xiao_di">CheXiaoDiActivity</string>
+    <string name="title_activity_emergency">EmergencyActivity</string>
+    <string name="title_activity_car_wash_beauty">CarWashBeautyActivity</string>
+    <string name="netstate">网络状态</string>
+    <string name="setnetwork">当前网络不可用,是否设置网络?</string>
+    <string name="ok">设置</string>
+    <string name="cancel">取消</string>
+    <string name="title_activity_net_work_base">NetWorkBaseActivity</string>
+    <string name="title_activity_arround">ArroundActivity</string>
+    <string name="title_activity_labor_and_materials_list">LaborAndMaterialsListActivity</string>
+    <string name="no_network_connection_toast">网络连接异常</string>
+    <string name="title_activity_car_brand">CarBrandActivity</string>
+
+    <string name="title_activity_series">SeriesActivity</string>
+    <string name="title_activity_vin">VinActivity</string>
+    <string name = "vin_hint">VIN是车辆识别代码,在行驶证(或车头前)可以找到</string>
+    
+</resources>

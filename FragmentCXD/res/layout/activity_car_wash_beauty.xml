@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_viewbg_defaut_2x"
+    android:orientation="vertical"
+    tools:context=".CarWashBeautyActivity" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="210dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/bgolor">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:padding="3dp"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全城" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:padding="3dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搭电" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:padding="3dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="距离最近" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listView_CarWashing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:padding="10dp"
+        android:divider="#bbbbbb"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

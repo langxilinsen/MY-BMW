@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bgolor">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical">
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_about_2x">
+            
+        </ImageView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:paddingBottom="10dp"
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            android:text="1.1   查看帮助信息:      Android.bat –h 或 android.bat –help  1.2   创建
+            avd  (1)  android.bat create avd -t 1 -c 256M -p  E:\android_sdk\android-SDK-windows-1.
+            6_r1\platforms\android-1.6\images -n avd16 -f -s HVGA  (2)  android.bat create avd -t 2 -c
+             256M -p  E:\android_sdk\android-sdk-windows-1.6_r1\platforms\android-1.6\images -n avd2 -f 
+             -s HVGA          以上，用不同的设置创建avd.     (3)  直接用”android.bat”命令可以启动Android SDK
+             图开界面(如下图),用它也可以创建avd;  (4)  在eclipse中，点击工具栏中的“open the avd and SDK manager”图标
+             来打开上图。  1.3   Lists existing targets or virtual devices      E:\android_sdk\android-sdk-windows-
+             1.6_r1\tools>android.bat list      Available Android targets:      id: 1           Name: Android 1.5 
+            1.1   查看帮助信息:     
+            
+            
+                                                                                                                    
+            
+            
+             Android.bat –h 或 android.bat –help  1.2   创建avd  (1)  android.b
+            at create avd -t 1 -c 256M -p  E:\android_sdk\android-SDK-windows-1.6_r1\platforms\android
+            -1.6\images -n avd16 -f -s HVGA  (2)  android.bat create avd -t 2 -c 256M -p  E:\android_sdk\a
+            ndroid-sdk-windows-1.6_r1\platforms\android-1.6\images -n avd2 -f -s HVGA          以上，用不同的
+            设置创建avd.     (3)  直接用”android.bat”命令可以启动Android SDK图开界面(如下图),用它也可以创建avd;  (4)  在ecl
+            ipse中，点击工具栏中的“open the avd and SDK manager”图标来打开上图。  1.3   Lists existing targets or vir
+            tual devices      E:\android_sdk\android-sdk-windows-1.6_r1\tools>android.bat list      Available An
+            droid targets:      id: 1           Name: Android 1.5
+            1.1   查看帮助信息:      Android.bat –h 或 android.bat –help  1.2   创建avd  (1)  android.bat create av
+            
+            " />
+    </LinearLayout>
+
+</ScrollView>

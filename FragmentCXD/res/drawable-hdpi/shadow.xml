@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 背景渐变  gradient定义该形状里面为渐变色填充 -->
+    <gradient
+        android:endColor="#33000000"
+        android:centerColor="#11000000"
+        android:startColor="#00000000" />
+
+</shape>

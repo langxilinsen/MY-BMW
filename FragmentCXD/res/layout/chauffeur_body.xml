@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="98dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.36"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/emergency_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="¥ 100" 
+            android:paddingTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每小时"
+            android:paddingLeft="10dp"
+            android:gravity="right"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="238dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/emergency_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市区30分钟抵达,提前半小时预约"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:lines="1"
+            android:ellipsize="end"
+             />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="3"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="允许用户滚动的，可以放置超过物理显示器大小的视图层次的布局容器. ScrollView 是一种 FrameLayout， 这意味着需要在其上放置一个包含整个滚动内容的子元素. 该子元素自身也可以是一个拥有复杂对象层次的布局管理器." 
+             android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

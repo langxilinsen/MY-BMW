@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bgolor"
+    >
+
+    <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="请上传车损照片"
+		android:paddingLeft="8dp"
+		android:paddingTop="15dp"
+		android:textSize="16sp"
+		android:textColor="@android:color/black"        
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        >
+        
+       <ImageButton
+        android:id="@+id/cameral_button_1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.25"
+        android:src="@drawable/bg_shot_1"
+        /> 
+    
+        <ImageButton
+        android:id="@+id/cameral_button_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:src="@drawable/bg_shot_2"
+        android:padding="10dp"
+        /> 
+        
+        <ImageButton 
+        android:id="@+id/cameral_button_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:src="@drawable/bg_shot_3"
+        /> 
+        
+        <ImageButton
+        android:id="@+id/cameral_button_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:src="@drawable/bg_shot_4"
+        /> 
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="车损描述"
+		android:paddingLeft="8dp"
+		android:paddingTop="15dp"
+		android:textSize="16sp"
+		android:textColor="@android:color/black"        
+        />
+    <EditText
+       android:id="@+id/inquery_description"
+       android:paddingLeft="8dp"
+       android:paddingRight="8dp"
+       android:layout_height="80dp"
+       android:layout_width="match_parent"
+       android:background="@android:color/white"
+        />
+    
+</LinearLayout>

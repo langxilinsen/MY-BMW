@@ -20,22 +20,14 @@ public class Ipsum {
     static String[] Headlines = {
         "Article 1",
         "Article 2",
-        "Article 3",
-        "Article 4",
-        "Article 5",
-        "Article 6",
-        "Article 7",
-        "Article 8"
+        "Article 3"
+    
     };
 
     static String[] Articles = {
-        "nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr",
-        "Ar\n\nVinyl williamsburg non velit, master cleanse four loko banh mi. Enim kogi keytar trust fund pop-up portland gentrify. Non ea typewrtto",
-        "ne\n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr",
-        "n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr",
-        "ne\n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr",
-        " \n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr",
-        " \n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr",
-        " \n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retr"
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ¶¥Ìæ"
+        
     };
 }

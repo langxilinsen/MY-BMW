@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/carImage"
+                android:layout_width="142dp"
+                android:layout_height="88dp"
+                android:paddingLeft="17dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/img_car" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/myCarButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/home_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/exclussiveButton"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/icon_home_1"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/exclussive_button"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fundermaintalButton"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/icon_home_2"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/fundermaintal_button"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

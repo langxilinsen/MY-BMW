@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaborAndMaterialsListActivity" 
+    android:background="@drawable/bgolor"
+    android:orientation="vertical" 
+    >
+
+    <RadioGroup
+        android:id="@+id/list_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="210dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/list_radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全城" />
+
+        <RadioButton
+            android:id="@+id/list_radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搭电" />
+
+        <RadioButton
+            android:id="@+id/list_radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="距离最近" />
+        <RadioButton
+            android:id="@+id/list_radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搜索" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listView_laborList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </ListView>
+</LinearLayout>
