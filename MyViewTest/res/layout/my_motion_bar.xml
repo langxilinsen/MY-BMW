@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_filter" >
+
+        <ImageView
+            android:id="@+id/image0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_filter_ietm_hit" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_filter_ietm_hit" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_filter_ietm_hit" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_filter_ietm_hit" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/labor_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/labor_radio0"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_filter_ietm"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="defalt_order"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/labor_radio1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_filter_ietm"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="nearest"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/labor_radio2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_filter_ietm"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="popularest"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/labor_radio3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_filter_ietm"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="search"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</FrameLayout>
